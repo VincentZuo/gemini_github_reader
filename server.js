@@ -104,7 +104,7 @@ app.post('/api/analyze', async (req, res) => {
     );
 
     // Analyze with Gemini
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
     const prompt = question 
       ? `Analyze the following code files and answer this specific question: ${question}\n\n${fileContents.join('\n\n')}`
       : `Analyze the following code files and provide insights about:
